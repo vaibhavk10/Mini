@@ -11,7 +11,7 @@ module.exports = {
     botName: 'Knight Bot Mini',
     prefix: '.',
     sessionName: 'session',
-    sessionID:'', // KnightBot! format session string (e.g., "KnightBot!<base64_compressed_data>")
+    sessionID: process.env.SESSION_ID || '',
     newsletterJid: '120363406412828828@newsletter', // Newsletter JID for menu forwarding
     updateZipUrl: '', // URL to latest code zip for .update command
     
