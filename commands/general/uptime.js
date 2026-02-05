@@ -50,12 +50,14 @@ module.exports = {
       const uptimeSeconds = process.uptime();
       const uptime = formatUptime(uptimeSeconds);
       
-      // Get bot info
-      const botName = config.botName || 'Bot';
+// Get bot info
+const botName = config.botName || 'Bot';
+const botVersion = 'V1.0.0';
       
       // Build response message
       let message = `╭━━『 *Bot Uptime* 』━━╮\n\n`;
-      message += `🤖 *Bot Name:* ${botName}\n`;
+    message += `🤖 *Bot Name:* ${botName}\n`;
+    message += `🧬 *Bot Version:* ${botVersion}\n`;
       message += `⏱️ *Uptime:* ${uptime}\n`;
       message += `\n╰━━━━━━━━━━━━━━━╯`;
       
